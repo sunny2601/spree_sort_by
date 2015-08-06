@@ -7,3 +7,7 @@ Deface::Override.new(:virtual_path  => "spree/home/index",
                      :insert_before => "[data-hook='homepage_products']",
                      :name          => "sort_by",
                      :partial =>  "spree/taxons/sort_by"  )
+Deface::Override.new(:virtual_path  => "spree/products/index",
+                     :insert_before => "[data-hook='product_products']",
+                     :name          => "sort_by",
+                     :partial =>  "spree/taxons/sort_by"  )
