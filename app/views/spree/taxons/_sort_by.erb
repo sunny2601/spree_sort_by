@@ -1,4 +1,4 @@
-  <select id='dynamic_select'>
+  <select id='dynamic_select' class= 'form-control required'>
      <option value='' selected>Sort by</option>
      <option value='<%= path_to request.path , params.merge(:sort_by => "price") %>' >price asc</option>
      <option value='<%= path_to request.path , params.merge(:sort_by => "price_desc") %>'>price desc</option>
